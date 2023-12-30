@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.ZmeykaF1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Справка для игры Змейка"  Width="1000" Height="500" Style="{StaticResource ResourceKey=ff}" FontSize="25">
+    <Viewbox Stretch="Fill">
+        <Grid Width="1000" Height="450" KeyDown="Windos_KeyDown">
+            <StackPanel>
+                <TextBlock Margin="5" TextAlignment="Justify" TextWrapping="Wrap">«Змейка» – это игра, где игрок управляет длинным, тонким существом, напоминающим змею, которое ползает по плоскости, собирая «еду», избегая столкновения с собственным хвостом и краями игрового поля. Каждый раз, когда змея съедает кусок пищи, она становится длиннее, что постепенно усложняет игру. По мере игры скорость будет увеличиваться, благодаря чему играть будет всегда весело. Очки начисляются игроку в тот момент, когда змея съедает еду.</TextBlock>
+                <TextBlock Margin="5" TextAlignment="Justify" TextWrapping="Wrap"><Run Text="Управление: для передвижения необходимо нажимать на W,S,D,A. Где W это движение вверх, S это движение вниз, D это движение вправо, а A это движение влево. Для того чтобы поставить игру на паузу необходимо нажать на кнопку "/><Run Text="Escape"/><Run Text=", для того чтобы воспроизвести игру необходимо нажать на кнопку "/><Run Text="Enter."/><Run Text=" Для перезапуска игры необходимо нажать на "/><Run Text="Space"/>.</TextBlock>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</Window>

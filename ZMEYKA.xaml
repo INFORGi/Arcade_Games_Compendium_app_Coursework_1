@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.ZMEYKA"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+    xmlns:local="clr-namespace:WpfApp1"  
+    mc:Ignorable="d"  
+    WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+    Title="Счет: 0"  Width="1200" Height="700" ContentRendered="Window_ContentRendered"  KeyUp="Window_KeyUp">
+    <Viewbox Stretch="Fill">
+        <Canvas Width="1200" Height="700" x:Name="GameArea" ClipToBounds="True">
+            <!--<Image Source="/img/1678247455_bogatyr-club-p-pikselnaya-trava-vid-sverkhu-foni-instagra-6.png" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1200" Canvas.Top="-173"/>-->
+            <!--<TextBlock x:Name="sds" Text="Нажмите на Enter" FontSize="30" Canvas.Left="479" Canvas.Top="375" Foreground="Red" Visibility="Hidden"/>-->
+        </Canvas>
+    </Viewbox>
+</Window>

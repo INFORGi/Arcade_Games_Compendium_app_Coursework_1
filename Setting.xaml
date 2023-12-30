@@ -1,0 +1,75 @@
+﻿<Window x:Class="WpfApp1.Setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="Setting" Style="{StaticResource ResourceKey=ff}" Height="500" Width="1000" KeyDown="Key_Downe">
+    <Viewbox Stretch="Fill">
+        <Grid Width="1000" Height="500" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+
+            <!--<Image Source="/img/pngwing.com (12).png" Margin="46,-359,-666,-129" Grid.RowSpan="9" Grid.ColumnSpan="12" RenderTransformOrigin="0.5,0.5" Opacity="0.2" Grid.Column="1" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-138.034"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Source="/img/pngwing.com (13).png" Grid.ColumnSpan="12" Margin="-10,-74,10,-106" Grid.RowSpan="9" Opacity="0.2" />-->
+
+
+            <Button Style="{StaticResource fo}" Grid.Column="6" Margin="0,5,0,0"  Grid.Row="2" Grid.ColumnSpan="6" x:Name="rb1" Click="rb1_Click" Content="Отключить музыку"/>
+            <Button Style="{StaticResource fo}" Grid.Column="6"  Grid.Row="4" Grid.ColumnSpan="6" x:Name="rb2" Click="rb2_Click" Content="Включить музыку"/>
+            <Button Style="{StaticResource kf}" Grid.Column="6"  Grid.Row="6" Grid.ColumnSpan="6" Click="ddd" Content="Применить настройки" />
+
+            <Label Grid.ColumnSpan="18"  Grid.RowSpan="1" Background="#5b7e96"/>
+            <Label Grid.ColumnSpan="18"  Grid.RowSpan="1" Background="#9ad5ff" Grid.Row="10"/>
+            <Label Grid.ColumnSpan="18" HorizontalAlignment="Center" FontSize="35" VerticalAlignment="Center">Настройки</Label>
+
+            <Button Style="{StaticResource ResourceKey=close2}" Margin="2,1" Grid.Column="0" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Name="lll" Click="lll_Click"/>
+        </Grid>
+    </Viewbox>
+</Window>

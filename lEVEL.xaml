@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp1.lEVEL"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="lEVEL" Height="500" Style="{StaticResource ResourceKey=ff}" Width="1000">
+    <Viewbox Stretch="Fill">
+        <Grid Width="1000" Height="500" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <!--<Image Source="/img/pngwing.com (24).png" Grid.ColumnSpan="18" Grid.Row="2" Grid.RowSpan="9" Opacity="0.5" />
+            <Image Source="/img/pngwing.com (23).png" Grid.ColumnSpan="5"  Grid.RowSpan="4" Grid.Row="7" Opacity="0.75" Grid.Column="13" />
+            <Image Source="/img/pngwing.com (23).png" Grid.ColumnSpan="5" Grid.RowSpan="4" Grid.Row="7" Opacity="0.75"   />-->
+
+
+
+            <Button Style="{StaticResource fo}" Content="Нормальная сложность" Grid.Column="5"  Grid.Row="2" Grid.ColumnSpan="7" Click="Button_Click"/>
+            <Button Style="{StaticResource fo}" Content="Высокая сложность" Grid.Column="5" Grid.Row="4" Grid.ColumnSpan="7" Click="Button_Click2"/>
+
+
+            <Label Grid.ColumnSpan="18"  Grid.RowSpan="1" Background="#5b7e96"/>
+            <Label Grid.ColumnSpan="18"  Grid.RowSpan="1" Background="#9ad5ff" Grid.Row="10"/>
+            <Label Grid.ColumnSpan="18" HorizontalAlignment="Center" FontSize="35" VerticalAlignment="Center">Выбор сложности</Label>
+
+            <Button Style="{StaticResource ResourceKey=close2}" Margin="2,1" Grid.Column="0" Grid.Row="10" Grid.RowSpan="1" Grid.ColumnSpan="1" Name="ll2" Click="lll_Click"/>
+        </Grid>
+    </Viewbox>
+</Window>

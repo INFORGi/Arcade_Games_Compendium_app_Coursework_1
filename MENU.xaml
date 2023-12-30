@@ -1,0 +1,67 @@
+﻿<Window x:Class="WpfApp1.MENU"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="MENU" Height="500" Style="{StaticResource ResourceKey=ff}" Width="1000">
+    <Viewbox Stretch="Fill">
+        <Grid Width="1000" Height="500" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Image Source="/img/pngwing.com (25).png" Grid.ColumnSpan="18" Margin="-34,-16,-76,-16" Grid.RowSpan="13" Opacity="0.5" Visibility="Hidden" />
+            <Image Source="/img/pngwing.com (26).png" Grid.ColumnSpan="6" Margin="1,65,5,0" Grid.RowSpan="11" Grid.Column="12" Opacity="0.4" />
+            <Image Source="/img/pngwing.com (27).png" Grid.ColumnSpan="6" Margin="-14,1,0,3" Grid.RowSpan="10" Opacity="0.4" Grid.Row="1" />
+
+            <StackPanel Grid.Column="6" Grid.Row="1" Grid.RowSpan="8" Grid.ColumnSpan="6">
+                <Button Style="{StaticResource fo}" Height="50" Margin="0,20,0,0" Content="Snake" Grid.Column="6"  Grid.Row="2" Grid.ColumnSpan="6" Click="Button_Click"/>
+                <Button Style="{StaticResource fo}" Height="50" Margin="0,10" Content="Ping Pong" Grid.Column="6"  Grid.Row="4" Grid.ColumnSpan="6" Click="Button_Click_1"/>
+                <Button Style="{StaticResource fo}" Height="50" Margin="0,10" Content="Space Invaders" Grid.Column="6"  Grid.Row="6" Grid.ColumnSpan="6" Click="Button_Click_2"/>
+                <Button Style="{StaticResource fo}" Height="50" Margin="0,10" Content="Pac Man" Grid.Column="6"  Grid.Row="8" Grid.ColumnSpan="6" Click="Button_Click_3"/>
+                <Button Style="{StaticResource fo}" Height="50" Margin="0,10" Content="Flappy Bird" Grid.Column="6"  Grid.Row="10" Grid.ColumnSpan="6" Click="Button_Click_4"/>
+            </StackPanel>
+
+            <Label Grid.ColumnSpan="18"  Grid.RowSpan="1" Background="#5b7e96"/>
+            <Label Grid.ColumnSpan="18"  Grid.RowSpan="1" Background="#9ad5ff" Grid.Row="12"/>
+            <Label Grid.ColumnSpan="18" HorizontalAlignment="Center" FontSize="35" VerticalAlignment="Center">Меню выбора игры</Label>
+
+            <Button Style="{StaticResource ResourceKey=close2}" Margin="2,1" Grid.Column="0" Grid.Row="12" Grid.RowSpan="1" Grid.ColumnSpan="1" Name="ll2" Click="lll_Click"/>
+        </Grid>
+    </Viewbox>
+</Window>

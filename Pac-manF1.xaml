@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.Pac_manF1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+    Title="Справка для игры Pac man" Height="450" Width="1000" Style="{StaticResource ResourceKey=ff}" FontSize="25">
+    <Viewbox Stretch="Fill" >
+        <Grid Height="450" Width="1000">
+            <StackPanel>
+                <TextBlock Margin="5" TextAlignment="Justify" TextWrapping="Wrap">«Pac-man» – это игра, где задача игрока — управляя Пакманом, съесть все точки в лабиринте, избегая встречи с привидениями, которые гоняются за героем. С повышением уровня игры изменяется только её сложность, архитектура лабиринта остаётся идентичной. Очки присваиваются за количество точек, которые игрок успел съесть.</TextBlock>
+                <TextBlock Margin="5" TextAlignment="Justify" TextWrapping="Wrap"><Run Text="Управление: для передвижения необходимо нажимать на W,S,D,A. Где W это движение вверх, S это движение вниз, D это движение вправо, а A это движение влево. Для того чтобы поставить игру на паузу необходимо нажать на кнопку "/><Run Text="Escape"/><Run Text=", для того чтобы игра воспроизвести игру необходимо нажать на кнопку "/><Run Text="Enter."/><Run Text=" Для перезапуска игры необходимо нажать на "/><Run Text="Space"/></TextBlock>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</Window>

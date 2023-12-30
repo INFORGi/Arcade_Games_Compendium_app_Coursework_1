@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp1.Pravilazmea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Title="Pravilazmea" Height="500" Width="600">
+    <Grid>
+        <StackPanel x:Name="sp" Style="{StaticResource ResourceKey=ff}" Canvas.Left="300" Canvas.Top="150">
+            <TextBlock x:Name="tx1" Margin="5" TextAlignment="Justify" TextWrapping="Wrap">Правила: Игрок управляет змеей, которая ползает по полю и собирает «еду». Необходимо избегать столкновения с собственным хвостом и краями игрового поля. Каждый раз, когда змея съедает кусок пищи, она становится длиннее и ускоряетя, что постепенно усложняет игру. Очки начисляются игроку в тот момент, когда змея съедает еду.</TextBlock>
+            <Button Margin="0,300,0,0" Content="Назад" Style="{StaticResource fo}" Width="500" Height="50" Click="J"/>
+        </StackPanel>
+    </Grid>
+</Window>
